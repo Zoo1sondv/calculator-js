@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+
+        <link rel="stylesheet" href="./assets/style.css" />
+    </head>
+    <body>
+        <div class="calculator">
+            <div id="calculator__history" class="calculator__history"></div>
+            <div id="calculator__result" class="calculator__result"></div>
+            <div id="calculator__keyboard" class="calculator__keyboard">
+                <div class="calculator__keyboard__row">
+                    <button
+                        data-action="/100"
+                        class="calculator__keyboard__row__button calculator__keyboard__row__button--first"
+                    >
+                        %
+                    </button>
+                    <button
+                        data-action="C"
+                        class="calculator__keyboard__row__button calculator__keyboard__row__button--first"
+                    >
+                        C
+                    </button>
+                    <button
+                        data-action="delete"
+                        class="calculator__keyboard__row__button calculator__keyboard__row__button--first"
+                    >
+                        Del
+                    </button>
+                    <button
+                        data-action="/"
+                        class="calculator__keyboard__row__button calculator__keyboard__row__button--blue"
+                    >
+                        /
+                    </button>
+                </div>
+                <div class="calculator__keyboard__row">
+                    <button data-action="7" class="calculator__keyboard__row__button">7</button>
+                    <button data-action="8" class="calculator__keyboard__row__button">8</button>
+                    <button data-action="9" class="calculator__keyboard__row__button">9</button>
+                    <button
+                        data-action="*"
+                        class="calculator__keyboard__row__button calculator__keyboard__row__button--blue"
+                    >
+                        X
+                    </button>
+                </div>
+                <div class="calculator__keyboard__row">
+                    <button data-action="4" class="calculator__keyboard__row__button">4</button>
+                    <button data-action="5" class="calculator__keyboard__row__button">5</button>
+                    <button data-action="6" class="calculator__keyboard__row__button">6</button>
+                    <button
+                        data-action="-"
+                        class="calculator__keyboard__row__button calculator__keyboard__row__button--blue"
+                    >
+                        -
+                    </button>
+                </div>
+                <div class="calculator__keyboard__row">
+                    <button data-action="1" class="calculator__keyboard__row__button">1</button>
+                    <button data-action="2" class="calculator__keyboard__row__button">2</button>
+                    <button data-action="3" class="calculator__keyboard__row__button">3</button>
+                    <button
+                        data-action="+"
+                        class="calculator__keyboard__row__button calculator__keyboard__row__button--blue"
+                    >
+                        +
+                    </button>
+                </div>
+                <div class="calculator__keyboard__row">
+                    <button data-action="-1" class="calculator__keyboard__row__button">+/-</button>
+                    <button data-action="0" class="calculator__keyboard__row__button">0</button>
+                    <button data-action="." class="calculator__keyboard__row__button">,</button>
+                    <button
+                        data-action="="
+                        class="calculator__keyboard__row__button calculator__keyboard__row__button--origin"
+                    >
+                        =
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
